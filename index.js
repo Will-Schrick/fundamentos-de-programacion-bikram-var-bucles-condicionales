@@ -2,21 +2,23 @@
 //Variables
 let variableSinValor;
 let booleano1 = true;
-let booleano2 = false;
+let booleano2 = true;
 const PI = 3.14;
 const TAU = PI *2;
 
 //Booleanos
 let booleanoAnd = booleano1 && booleano2;
-let booleanoNot = booleano1 != booleano2;
+let booleanoNot = !booleano2;
 let booleanoMix0 = booleano1 || booleano2 && (booleano1 || (!booleano1 &&! booleano2));
 
 
 //Operadores
 let incrementarDesp =2;
-let resuldatoDesp = incrementarDesp ++;
+let resultadoDesp = incrementarDesp ++;
 let incrementarAntes = 2; 
-let resuldatoAntes = ++incrementarAntes;
+let resultadoAntes = ++incrementarAntes;
+
+
 
 //Bucles
 let contarHasta10_2 =0
@@ -28,7 +30,7 @@ let contarHasta10_2 =0
 
 let postI = 0;
 let postJ = 0;
-for (let i = 0; i <10; i++) {
+for (let i = 0; i <11; i++) {
     postI += postJ++;     // loop 0 - both are 0, so postI(0) + postJ(0) = postI(0) results... 
                          //but then Post-++ is added adver the calc PostJ becomes 1 -- 
                          // so, after iteration 0 = postI=o and postJ=1
@@ -66,11 +68,11 @@ i (iteration)	Condition (i % 2 === 0)	Action	sumaPares (updated)
 //#13- #19
 
 let variableValorNumerico = 4;
-const MiNombre = Will;
+const  MiNombre = 'Will';
 const MiNumeroFav =16;
 let booleanoOr = booleano1 || booleano2;
 let booleanoMix1  = (booleano1 && (TAU/2 === PI)) || (variableValorNumerico  >= MiNumeroFav);
-let seisNoEsNueve = 6 !== 9;
+let seisNoEsNueve  = 6 !== 9;
 let booleanoMix2 = (variableValorNumerico > 0) || (variableValorNumerico < -(MiNumeroFav * TAU));
                     // 4 > 0 (True)  OR (4 < -(4*(3.14*2))) this part is 25.12
                     // 4 > 0 (True)   OR 4 <25.12 (True)
